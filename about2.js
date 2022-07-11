@@ -1,10 +1,9 @@
-var myArray = ['Whistlestop', 'Griffin Claw', 'Primos','Sy Thai'];  
 
-let button = document.querySelector('#restaraunts');
-
-var pressedButton = document.getElementById("restaraunts");
-pressedButton.addEventListener("click", function (event) {
-   var rand = myArray[(Math.random() * myArray.length) | 0]
-   console.log(rand)
-
-});
+//creat a function which will pull random restaraunts from btn ID.
+function GetValue()
+{
+    var myArray = new Array('Whistlestop', 'Griffin Claw', 'Primos','Sy Thai','First Watch','Duck Donuts');  
+    var random = myArray [Math.floor(Math.random() * myArray.length)];
+    alert(random);
+    document.getElementById("btn").innerHTML=random;
+}
